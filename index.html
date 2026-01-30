@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./resource/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./resource/css/module.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <video src="./resource/images/bg.mp4" muted autoplay loop></video>
+        <div class="abs">
+            <img src="./resource/images/obj01.png" alt="">
+            <img src="./resource/images/obj02.png" alt="">
+            <img src="./resource/images/obj03.png" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".wrap").click(function(){
+            $(".abs").toggleClass("act");
+        });
+    });
+</script>
+
+</html>
